@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+app/build/
+
+# Local config
+local.properties
+
+# Generated folders
+generated/
+intermediates/
+outputs/
+tmp/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+
+# APK / Bundle
+*.apk
+*.aab
+output-metadata.json
+
+# Keystore
+*.jks
+*.keystore
+
+# Google services (IMPORTANT)
+google-services.json
+app/google-services.json
+
+# OS files
+.DS_Store

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="212dp"
+            android:layout_height="0dp"
+
+
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="146dp"
+            android:backgroundTint="#353535"
+            android:fontFamily="@font/baloo"
+            android:text="set speed limit"
+            android:textColor="#D4D4D4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="403dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="61dp"
+            android:backgroundTint="#353535"
+            android:fontFamily="@font/baloo"
+            android:onClick="start"
+            android:text="start"
+            android:textColor="#4CAF50"
+            android:textSize="40sp"
+            app:icon="@drawable/start"
+            app:iconTintMode="src_in"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speedview" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="102dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="km/h"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/speedview"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <TextView
+            android:id="@+id/speedview"
+            android:layout_width="159dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="93dp"
+            android:fontFamily="@font/wallpoet"
+            android:text="@string/initial_speed"
+            android:textAlignment="center"
+            android:textColor="#FFFCFC"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="66dp"
+            android:onClick="recognize"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="52dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/gghg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
